@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Amber 花藝，一頁式花藝品牌網站，提供首頁、品牌介紹、商品展示、品牌故事與聯絡方式。"
+    />
+    <title>Amber 花藝｜奶茶色系質感花藝品牌</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="主要導覽">
+      <a class="brand" href="#home" aria-label="Amber 花藝首頁">
+        <span class="brand-mark">A</span>
+        <span>Amber 花藝</span>
+      </a>
+      <nav class="nav-links" aria-label="網站區塊">
+        <a href="#home">首頁</a>
+        <a href="#about">品牌介紹</a>
+        <a href="#products">商品展示</a>
+        <a href="#story">品牌故事</a>
+        <a href="#contact">聯絡方式</a>
+      </nav>
+      <a class="header-action" href="#contact">預約諮詢</a>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-label="首頁">
+        <div class="hero-copy">
+          <p class="eyebrow">Bespoke Floral Studio</p>
+          <h1>Amber 花藝</h1>
+          <p class="lead">
+            以奶茶色的溫潤、琥珀光的層次，為婚禮、商業空間與日常花禮打造大氣而細緻的花藝風景。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#products">查看商品</a>
+            <a class="secondary-button" href="#contact">聯絡我們</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img src="assets/amber-floral-hero.png" alt="奶茶色系高雅花束與陶瓷花器" />
+        </figure>
+      </section>
+
+      <section class="intro" id="about" aria-label="品牌介紹">
+        <p class="section-kicker">About Amber</p>
+        <h2>專注質感花禮與場域花藝，讓每一束花都帶著安靜的份量。</h2>
+        <p>
+          Amber 花藝以低飽和奶茶色系、自然線條與細緻材質為核心，提供花束訂製、婚禮花藝、商業空間佈置與花藝課程。
+          我們重視花材比例、色彩層次與使用情境，讓作品不只是漂亮，而能成為場合裡被記住的氛圍。
+        </p>
+      </section>
+
+      <section class="products" id="products" aria-label="商品展示">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Products</p>
+            <h2>商品展示</h2>
+          </div>
+          <p class="section-note">每款皆可依預算、色系與送禮場合客製。</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-image bouquet"></div>
+            <div class="product-content">
+              <span>人氣花禮</span>
+              <h3>奶茶玫瑰花束</h3>
+              <p>柔和玫瑰、洋桔梗與季節草花搭配，適合生日、紀念日與開幕祝賀。</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image box"></div>
+            <div class="product-content">
+              <span>精緻訂製</span>
+              <h3>琥珀永生花盒</h3>
+              <p>以永生花與乾燥花保存祝福，色系沉穩耐看，適合企業贈禮與收藏。</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image wedding"></div>
+            <div class="product-content">
+              <span>婚禮系列</span>
+              <h3>香檳色新娘捧花</h3>
+              <p>結合蘭花、玫瑰與緞帶垂墜感，打造優雅且具儀式感的婚禮造型。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="story" id="story" aria-label="品牌故事">
+        <div class="story-panel">
+          <p class="section-kicker">Brand Story</p>
+          <h2>Amber 的靈感來自午後光線落在花瓣上的那一刻。</h2>
+          <p>
+            創立 Amber 花藝之前，我們長時間為婚禮與品牌活動設計花藝。最常被客人記住的，不是最鮮豔的花，
+            而是花束在空間中留下的溫度、光影與情緒。因此 Amber 選擇以琥珀、象牙白、奶茶與鼠尾草綠作為品牌語彙，
+            讓花藝回到柔和、耐看且真實的美。
+          </p>
+        </div>
+        <div class="story-image" aria-hidden="true"></div>
+      </section>
+
+      <section class="contact-band" id="contact" aria-label="聯絡方式">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>聯絡方式</h2>
+          <div class="contact-list">
+            <p><strong>電話</strong><span>02-2345-6789</span></p>
+            <p><strong>LINE</strong><span>@amberflowers</span></p>
+            <p><strong>Email</strong><span>hello@amber-floral.com</span></p>
+            <p><strong>地址</strong><span>台北市大安區花藝路 18 號</span></p>
+            <p><strong>營業時間</strong><span>週二至週日 11:00 - 19:00</span></p>
+          </div>
+        </div>
+        <form class="contact-form">
+          <label>
+            <span>姓名</span>
+            <input type="text" name="name" autocomplete="name" placeholder="您的姓名" />
+          </label>
+          <label>
+            <span>需求類型</span>
+            <select name="service">
+              <option>花束訂製</option>
+              <option>永生花禮</option>
+              <option>婚禮花藝</option>
+              <option>空間佈置</option>
+              <option>花藝課程</option>
+            </select>
+          </label>
+          <label class="wide">
+            <span>聯絡方式</span>
+            <input type="text" name="contact" placeholder="Email / LINE / 電話" />
+          </label>
+          <button type="button">送出預約</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
