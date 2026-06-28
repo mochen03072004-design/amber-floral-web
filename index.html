@@ -137,5 +137,27 @@
         </form>
       </section>
     </main>
+
+    <button class="back-to-top" type="button" aria-label="回到最上方">
+      <span aria-hidden="true">↑</span>
+    </button>
+
+    <script>
+      const backToTopButton = document.querySelector(".back-to-top");
+
+      const toggleBackToTopButton = () => {
+        backToTopButton.classList.toggle("is-visible", window.scrollY > 360);
+      };
+
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+
+      window.addEventListener("scroll", toggleBackToTopButton, { passive: true });
+      toggleBackToTopButton();
+    </script>
   </body>
 </html>
