@@ -475,6 +475,29 @@ select {
   font-weight: 800;
 }
 
+.back-to-top {
+  position: fixed;
+  right: clamp(18px, 3vw, 32px);
+  bottom: clamp(18px, 3vw, 32px);
+  z-index: 20;
+  width: 58px;
+  height: 58px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid rgba(251, 247, 239, 0.42);
+  border-radius: 50%;
+  background: var(--espresso);
+  color: var(--cream);
+  box-shadow: 0 16px 36px rgba(61, 48, 40, 0.22);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.back-to-top:hover,
+.back-to-top:focus-visible {
+  background: var(--amber);
+}
+
 @media (max-width: 980px) {
   .hero,
   .gallery,
@@ -555,5 +578,12 @@ select {
   .contact-list p {
     grid-template-columns: 1fr;
     gap: 2px;
+  }
+
+  .back-to-top {
+    width: 52px;
+    height: 52px;
+    right: 16px;
+    bottom: 16px;
   }
 }
